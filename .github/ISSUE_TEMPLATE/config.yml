@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/Booild-com/booilder-engine/security/advisories/new
+    about: Report vulnerabilities privately, not in a public issue.
+  - name: Roadmap
+    url: https://github.com/Booild-com/booilder-engine/blob/main/docs/roadmap.md
+    about: See the planned extraction and player-client phases.

@@ -1,0 +1,45 @@
+name: Feature / API proposal
+description: Propose a runtime feature, package API or protocol change
+title: "[proposal] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What can't you do today, and who is affected?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: API shape, package boundary, protocol impact, compatibility.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - 3D renderer
+        - 2D renderer
+        - Game packages
+        - Protocol / networking
+        - Rules / physics
+        - Player API
+        - Desktop shell
+        - Android shell
+        - Docs / examples
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: breaking
+    attributes:
+      label: Breaking-change impact
+      description: Does this change a public package API or the wire protocol?

@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a runtime, renderer, package or shell problem
+title: "[bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report security vulnerabilities here. See SECURITY.md.
+  - type: input
+    id: package
+    attributes:
+      label: Package / shell
+      description: e.g. @booild/vtt-engine, @booild/game-package, desktop
+      placeholder: "@booild/..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: "0.1.0 / canary-sha"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Load package ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour / logs
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser/WebView, Node, GPU if rendering-related
+      placeholder: "Windows 11, Chrome 13x, RTX ..."
+  - type: textarea
+    id: package-info
+    attributes:
+      label: Package info (if relevant)
+      description: Output of `booildgame inspect <file>` or the manifest hash
